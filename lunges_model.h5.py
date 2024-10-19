@@ -63,7 +63,7 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 # Train the model
 history = model.fit(X_train, y_train, epochs=20, batch_size=32, validation_data=(X_test, y_test))
 
-model.save('C:/Users/siddh/OneDrive/Desktop/fitmentor_1/bicep_model.h5')
+model.save('./lunges_model.h5')
 
 
 

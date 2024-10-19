@@ -5,7 +5,7 @@ from sklearn.preprocessing import LabelEncoder
 import math
 
 # Load dataset
-df = pd.read_csv('biceps/biceps_data.csv')
+df = pd.read_csv('C:/Users/Sameer Marathe/Desktop/Major_Project/exercise-pose-detection-/biceps_data.csv')
 
 # Select the keypoints for both left and right sides
 keypoints = [
@@ -58,7 +58,7 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 # Train the model
 history = model.fit(X_train, y_train, epochs=20, batch_size=32, validation_data=(X_test, y_test))
 
-model.save(r'C:/Users/siddh/OneDrive/Desktop/fitmentor_1/biceps/bicep_model.h5')
+model.save(r'C:/Users/Sameer Marathe/Desktop/Major_Project/exercise-pose-detection-/bicep_model.h5')
 
 
 
